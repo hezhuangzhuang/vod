@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context="com.zxwl.vod.activity.InstallActivity">
+
+    <include layout="@layout/common_title_layout"/>
+
+    <TextView
+        android:id="@+id/tv_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableRight="@mipmap/icon_arrow"
+        android:paddingBottom="14dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:text="Modify password"/>
+
+    <TextView
+        android:id="@+id/tv_play_and_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/white"
+        android:drawableRight="@mipmap/icon_arrow"
+        android:paddingBottom="14dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:text="Play And Download"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEE"/>
+
+    <TextView
+        android:id="@+id/tv_message_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:drawableRight="@mipmap/icon_arrow"
+        android:paddingBottom="14dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:text="Message push"/>
+
+    <TextView
+        android:id="@+id/tv_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/white"
+        android:drawableRight="@mipmap/icon_arrow"
+        android:paddingBottom="14dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:text="Clear cache"/>
+
+    <TextView
+        android:id="@+id/tv_login_off"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/login_bt_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Log Off"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

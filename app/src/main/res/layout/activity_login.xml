@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxwl.vod.activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_welcome"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/iv_welcome"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/login_icon_user"
+            android:drawablePadding="12dp"
+            android:hint="Your name"
+            android:inputType="textVisiblePassword"
+            android:singleLine="true"
+            android:textColor="#7E62DC"
+            android:textColorHint="#989898"
+            android:textSize="14sp"/>
+
+        <View
+            android:id="@+id/name_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/et_name"
+            android:background="#DDDDDD"/>
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/name_dividing"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/login_icon_pwd"
+            android:drawablePadding="12dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="#7E62DC"
+            android:textColorHint="#989898"
+            android:textSize="14sp"/>
+
+        <View
+            android:id="@+id/pwd_dividing"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/et_pwd"
+            android:background="#DDDDDD"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/pwd_dividing"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/login_bt_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/pwd_dividing"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/login_bt_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/tv_login"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/register_bt_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Sign Up Now"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/et_name"
+            android:layout_below="@id/tv_register"
+            android:layout_marginTop="20dp"
+            android:text="Forget Password"
+            android:textColor="#AFAFAF"/>
+
+        <TextView
+            android:id="@+id/tv_look_around"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_name"
+            android:layout_below="@id/tv_register"
+            android:layout_marginTop="20dp"
+            android:text="Look Around"
+            android:textColor="#AFAFAF"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="10dp"
+    android:id="@+id/rl_item_video"
+    >
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="160dp"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        tools:src="#ccc"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_cover"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#414141"
+        android:textSize="14sp"
+        android:text="标题"/>
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_cover"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#C8C8C8"
+        android:text="Beautiful Isle Of Somewhere Waiting for you to experience3"/>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_describe"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@mipmap/icon_love"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_describe"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/tv_type"
+        android:layout_toRightOf="@id/iv_cover"
+        android:drawableLeft="@mipmap/icon_show_number"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        tools:text="300"/>
+
+
+</RelativeLayout>

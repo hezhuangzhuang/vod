@@ -1,0 +1,85 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="com.zxwl.vod.fragment.HomeOneFragment">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_below="@id/fake_status_bar"
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#9050DA"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/welcome_logo"/>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/sv_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/register_bt_bg"/>
+
+        <ImageView
+            android:id="@+id/iv_histoty"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@mipmap/icon_history"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_search"
+        android:background="@android:color/white"
+        android:padding="14dp"
+        android:src="@mipmap/icon_liebiao"/>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_search"
+        android:layout_toLeftOf="@id/iv_more"
+        android:background="@android:color/white"
+        tl:tl_indicator_color="#9050d9"
+        tl:tl_indicator_height="2dp"
+        tl:tl_textAllCaps="true"
+        tl:tl_textSelectColor="#9859D9"
+        tl:tl_textUnselectColor="#686868"
+        tl:tl_textsize="13sp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_layout"
+        android:layout_marginTop="12dp"
+        />
+
+
+</RelativeLayout>

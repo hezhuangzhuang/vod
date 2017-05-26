@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxwl.vod.activity.VideoPlayActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <io.vov.vitamio.widget.CenterLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <io.vov.vitamio.widget.VideoView
+                android:id="@+id/buffer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </io.vov.vitamio.widget.CenterLayout>
+
+        <include
+            android:id="@+id/media_controller"
+            layout="@layout/media_controller"/>
+
+        <include
+            android:id="@+id/ll_loading"
+            layout="@layout/ll_loading"/>
+
+        <include
+            android:id="@+id/ll_buffer"
+            layout="@layout/ll_buffer"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="#9050D9"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_left="8dp"
+        app:tl_indicator_margin_right="8dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="#9050D9"
+        app:tl_textUnselectColor="#6E6E6E"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

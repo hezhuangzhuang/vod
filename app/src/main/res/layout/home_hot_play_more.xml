@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="12dp"
+        android:background="#F5F5F5"/>
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/view_top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:drawableLeft="@mipmap/icon_hot_play"
+        android:drawablePadding="6dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="10dp"
+        android:text="Hot play"
+        android:textColor="#646464"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_hot"
+        android:layout_below="@id/view_top"
+        android:layout_marginRight="12dp"
+        android:drawablePadding="6dp"
+        android:drawableRight="@mipmap/icon_arrow"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:text="More"
+        android:textColor="#989898"
+        android:textSize="13sp"/>
+</RelativeLayout>

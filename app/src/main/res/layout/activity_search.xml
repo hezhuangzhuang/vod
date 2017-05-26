@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    tools:context="com.zxwl.vod.activity.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8E51DA">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="CANCEL"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:textSize="14sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/tv_cancel"
+            android:background="@drawable/register_bt_bg"
+            android:drawableLeft="@mipmap/icon_gray_search"
+            android:drawablePadding="8dp"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textColor="#646464"/>
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="#9050D9"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_margin_left="8dp"
+        app:tl_indicator_margin_right="8dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="#9050D9"
+        app:tl_textUnselectColor="#6E6E6E"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
